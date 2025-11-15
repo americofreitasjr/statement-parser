@@ -27,12 +27,7 @@ export class FormatDetector {
    * Verifica se o conteúdo é OFX
    */
   private static isOFX(content: string): boolean {
-    const ofxPatterns = [
-      /<OFX>/i,
-      /OFXHEADER:/i,
-      /<BANKMSGSRSV1>/i,
-      /<STMTTRNRS>/i,
-    ];
+    const ofxPatterns = [/<OFX>/i, /OFXHEADER:/i, /<BANKMSGSRSV1>/i, /<STMTTRNRS>/i];
 
     return ofxPatterns.some((pattern) => pattern.test(content));
   }
@@ -51,7 +46,7 @@ export class FormatDetector {
       content[0] === 0x25 && // %
       content[1] === 0x50 && // P
       content[2] === 0x44 && // D
-      content[3] === 0x46    // F
+      content[3] === 0x46 // F
     );
   }
 }
