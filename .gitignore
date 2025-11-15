@@ -27,8 +27,7 @@ coverage/
 .env.local
 .env.*.local
 
-# NPM
-.npmrc
+# NPM (keep local auth only)
 .npmrc.local
 
 # Logs
