@@ -44,3 +44,6 @@ fixtures/*.ofx
 fixtures/*.pdf
 !fixtures/sample-*.ofx
 !fixtures/sample-*.pdf
+
+# Local statement inputs (arquivos privados)
+input/

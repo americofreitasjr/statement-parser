@@ -24,6 +24,17 @@ export enum TransactionType {
 }
 
 /**
+ * Produto/conta suportado pelo parser
+ */
+export enum AccountProduct {
+  CHECKING = 'checking',
+  SAVINGS = 'savings',
+  CREDIT_CARD = 'credit_card',
+  LOAN = 'loan',
+  UNKNOWN = 'unknown',
+}
+
+/**
  * Instituição bancária
  */
 export enum BankCode {
@@ -38,6 +49,7 @@ export enum BankCode {
   BTG = '208',
   SICREDI = '748',
   SICOOB = '756',
+  CARREFOUR = '368',
   UNKNOWN = '000',
 }
 
@@ -71,6 +83,8 @@ export interface AccountInfo {
   bankCode: BankCode;
   /** Nome do banco */
   bankName?: string;
+  /** Produto/conta (cartão, corrente, etc.) */
+  productType?: AccountProduct;
   /** Número da agência */
   branch?: string;
   /** Número da conta */
@@ -113,6 +127,10 @@ export interface ParseOptions {
   format?: StatementFormat;
   /** Código do banco (se conhecido) */
   bankCode?: BankCode;
+  /** Produto/conta (cartão, corrente, poupança, etc.) */
+  productType?: AccountProduct;
+  /** Nome do arquivo original (usado para heurísticas de parsing) */
+  fileName?: string;
   /** Timezone para normalização de datas (padrão: America/Sao_Paulo) */
   timezone?: string;
   /** Modo de depuração */

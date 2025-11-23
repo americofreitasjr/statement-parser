@@ -30,6 +30,108 @@ Hoje só existem scripts isolados dentro de squads, abandonados a cada reformula
 ### Chamado à comunidade
 Precisamos de PRs, issues, fixtures, exemplos, novos bancos e novos formatos. Contribua com adaptadores, documentação e cenários reais para manter o ecossistema vivo para todo dev que já precisou “parsear extrato” em produção.
 
+## Get Started
+
+### Instalação
+
+```bash
+npm install @americofreitasjr/statement-parser
+# ou
+yarn add @americofreitasjr/statement-parser
+```
+
+### Exemplo (PDF Carrefour)
+
+```typescript
+import {
+  StatementParser,
+  StatementFormat,
+  BankCode,
+  AccountProduct,
+} from '@americofreitasjr/statement-parser';
+import * as fs from 'node:fs';
+
+async function main() {
+  const buffer = fs.readFileSync('./input/carrefour-202409.pdf');
+  const parser = new StatementParser();
+
+  const result = await parser.parse(buffer, {
+    format: StatementFormat.PDF,
+    bankCode: BankCode.CARREFOUR,
+    productType: AccountProduct.CREDIT_CARD,
+    fileName: 'carrefour-202409.pdf',
+  });
+
+  console.log(result.account);
+  console.log(result.transactions[0]);
+}
+
+main();
+/*
+{
+  bankCode: '368',
+  bankName: 'Carrefour',
+  productType: 'credit_card'
+}
+{
+  date: 2024-09-01T00:00:00.000Z,
+  description: 'CRF 2 RJB RIO BARRA - 9/20',
+  amount: -190,
+  type: 'debit',
+  currency: 'BRL',
+  metadata: {
+    cardLastFour: '6745',
+    invoiceDueDate: 2024-10-11T00:00:00.000Z,
+    originalPurchaseDate: 2024-01-27T00:00:00.000Z,
+    currentInstallment: 9,
+    totalInstallments: 20
+  }
+}
+*/
+```
+
+> 💡 `format`, `bankCode`, `productType` e `fileName` ajudam o parser a selecionar o adapter correto e a inferir datas/parcelas com mais precisão. Para outros produtos/bancos basta informar o enum correspondente.
+
+### Usando buffers de outras fontes (ex.: S3)
+
+`StatementParser.parse` aceita tanto `Buffer` quanto `string`. Se o PDF estiver no S3 (ou qualquer storage), basta encaminhar o `Buffer` que você já possui:
+
+```typescript
+import {
+  StatementParser,
+  StatementFormat,
+  BankCode,
+  AccountProduct,
+} from '@americofreitasjr/statement-parser';
+import { S3Client, GetObjectCommand } from '@aws-sdk/client-s3';
+
+const parser = new StatementParser();
+const s3 = new S3Client({ region: 'sa-east-1' });
+
+const { Body } = await s3.send(
+  new GetObjectCommand({ Bucket: 'extratos', Key: 'carrefour-202409.pdf' })
+);
+const byteArray = await Body?.transformToByteArray();
+
+if (!byteArray) throw new Error('PDF não encontrado');
+
+const result = await parser.parse(Buffer.from(byteArray), {
+  format: StatementFormat.PDF,
+  bankCode: BankCode.CARREFOUR,
+  productType: AccountProduct.CREDIT_CARD,
+  fileName: 'carrefour-202409.pdf',
+});
+```
+
+### Suporte atual
+
+| Banco | Produto | Formato | Status | Detalhes |
+| --- | --- | --- | --- | --- |
+| Carrefour (Banco CSF) | Cartão de crédito | PDF | ✅ MVP disponível | Driver lê “LANÇAMENTOS NO BRASIL”, normaliza parcelas para o dia 01, expõe `invoiceDueDate`, `originalPurchaseDate`, `currentInstallment`, `totalInstallments` e `cardLastFour`. |
+
+- Novos bancos e produtos entram por meio de novos adapters (abra uma issue/PR com seus PDFs/OFX).
+- Mantenha seus arquivos reais em `input/` (gitignored) e gere fixtures + expected antes de enviar PRs.
+
 ## Roadmap
 
 ### 1. Suporte por Formato
@@ -75,6 +177,7 @@ Para OFX, teremos um parser comum com pequenos ajustes por banco. Para PDF, cada
 | Itaú | Em desenvolvimento | Layouts diferentes por produto (PF/PJ) | MVP: parser PF com coluna de saldo | Alta |
 | Bradesco | Em pesquisa | Linhas agrupadas e resumos intermediários | MVP: separar movimentos reais do resumo | Alta |
 | Banco do Brasil | Em pesquisa | Cabeçalhos complexos e campos duplicados | MVP: leitura confiável de data, histórico e valor | Alta |
+| Carrefour (Banco CSF) | ✅ MVP disponível | Parcelas usam data da compra e não do período; múltiplos cartões na mesma fatura | MVP: normalizar parcelas, enriquecer metadata com vencimento e cartão | Alta |
 | Santander | Planejado | Notas de rodapé interferindo no fluxo | MVP: descarte inteligente de rodapés | Média |
 | Caixa Econômica Federal | Planejado | Layout em grid com caixas posicionais | MVP: mapear colunas e saldo final | Média |
 | Banco Inter | Em pesquisa | Colunas de saldo parcial a cada linha | MVP: reconciliar saldo após cada lançamento | Média |
@@ -94,3 +197,12 @@ Para OFX, teremos um parser comum com pequenos ajustes por banco. Para PDF, cada
 
 ## Como contribuir
 Abra issues com amostras de extratos, descreva desafios específicos e envie PRs com parsers, fixtures e testes. Precisamos de ajuda para cobrir novos bancos, revisar normalizações e evoluir o roadmap de forma transparente—participe, proponha ideias e mantenha o Statement Parser pulsando.
+
+### Adapters PDF atuais
+
+- **Carrefour (Banco CSF)**: driver em `src/parsers/pdf/banks/carrefour`. Ele:
+  - Ajusta o campo `date` de parcelas para o dia **01** do mês vigente da fatura.
+  - Mantém `metadata.originalPurchaseDate` com a data real da compra, além das chaves `currentInstallment`, `totalInstallments`, `invoiceDueDate` e `cardLastFour`.
+  - Usa fixtures reais em `fixtures/pdf/carrefour/*.txt` e expected outputs em `.expected.json`. Gere novos expected usando o próprio driver (por exemplo, lendo os PDFs em `input/` e salvando o JSON gerado) para garantir que os testes (`tests/pdf/carrefour-pdf-processor.test.ts`) cubram cada mês.
+  - Os PDFs reais ficam fora do versionamento dentro de `input/` (listado no `.gitignore`).
+  - Para reduzir exposição de PII, apenas a amostra anonimizada `carrefour-202407` permanece versionada; mantenha seus demais fixtures/expected (reais) localmente e gere-os quando necessário.

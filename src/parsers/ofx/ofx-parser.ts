@@ -118,6 +118,7 @@ export class OFXParser implements IParser {
       '208': BankCode.BTG,
       '748': BankCode.SICREDI,
       '756': BankCode.SICOOB,
+      '368': BankCode.CARREFOUR,
     };
 
     return codeMap[code] || BankCode.UNKNOWN;
