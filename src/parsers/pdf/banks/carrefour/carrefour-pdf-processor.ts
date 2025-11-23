@@ -20,6 +20,7 @@ interface AmountParsingResult {
 interface StatementPeriod {
   statementYear: number;
   statementMonth?: number;
+  dueDate?: Date;
 }
 
 /**
@@ -62,6 +63,8 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
 
     const period = this.resolveStatementPeriod(context, text);
     const transactions: Transaction[] = [];
+    const statementReferenceDate = this.getStatementReferenceDate(period);
+    const invoiceDueDate = period.dueDate;
     let currentCardLastFour: string | undefined;
     let index = 0;
 
@@ -125,16 +128,39 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
         continue;
       }
 
+      const metadata: Record<string, unknown> = {};
+      if (currentCardLastFour) {
+        metadata.cardLastFour = currentCardLastFour;
+      }
+
+      if (invoiceDueDate) {
+        metadata.invoiceDueDate = invoiceDueDate;
+      }
+
+      const installmentInfo = this.extractInstallmentInfo(descriptionText);
+      let finalDate = date;
+
+      if (installmentInfo) {
+        metadata.currentInstallment = installmentInfo.current;
+        metadata.totalInstallments = installmentInfo.total;
+        metadata.originalPurchaseDate = date;
+
+        if (statementReferenceDate) {
+          finalDate = new Date(statementReferenceDate.getTime());
+        }
+      }
+
       const amountValue = parsedAmount.isCredit ? parsedAmount.value : -parsedAmount.value;
       const transactionType = parsedAmount.isCredit ? TransactionType.CREDIT : TransactionType.DEBIT;
+      const transactionMetadata = Object.keys(metadata).length > 0 ? metadata : undefined;
 
       transactions.push({
-        date,
+        date: finalDate,
         description: descriptionText,
         amount: Number(amountValue.toFixed(2)),
         type: transactionType,
         currency: 'BRL',
-        metadata: currentCardLastFour ? { cardLastFour: currentCardLastFour } : undefined,
+        metadata: transactionMetadata,
       });
     }
 
@@ -181,7 +207,9 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
     );
   }
 
-  private extractDateAndDescription(line: string):
+  private extractDateAndDescription(
+    line: string
+  ):
     | { day: number; month: number; description: string }
     | null {
     const match = DATE_LINE_REGEX.exec(line);
@@ -194,6 +222,25 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
       month: parseInt(match[2], 10),
       description: match[3].trim(),
     };
+  }
+
+  private extractInstallmentInfo(
+    description: string
+  ): { current: number; total: number } | null {
+    const installmentRegex = /-\s*(\d{1,3})\s*\/\s*(\d{1,3})\s*$/;
+    const match = description.match(installmentRegex);
+    if (!match) {
+      return null;
+    }
+
+    const current = parseInt(match[1], 10);
+    const total = parseInt(match[2], 10);
+
+    if (Number.isNaN(current) || Number.isNaN(total)) {
+      return null;
+    }
+
+    return { current, total };
   }
 
   private isAmountLine(line: string): boolean {
@@ -254,6 +301,7 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
   private resolveStatementPeriod(context: PdfParserContext, text: string): StatementPeriod {
     let statementYear = context.statementYear;
     let statementMonth = context.statementMonth;
+    let dueDate = this.extractDueDate(text) || undefined;
 
     if ((!statementYear || !statementMonth) && context.fileName) {
       const fileMatch = context.fileName.match(/(\d{4})(\d{2})/);
@@ -265,23 +313,20 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
       }
     }
 
-    if (!statementMonth || !statementYear) {
-      const dueDate = this.extractDueDate(text);
-      if (dueDate) {
-        const dueMonth = dueDate.getMonth() + 1;
-        const closingMonth = dueMonth === 1 ? 12 : dueMonth - 1;
-        const closingYear = dueMonth === 1 ? dueDate.getFullYear() - 1 : dueDate.getFullYear();
+    if ((!statementMonth || !statementYear) && dueDate) {
+      const dueMonth = dueDate.getMonth() + 1;
+      const closingMonth = dueMonth === 1 ? 12 : dueMonth - 1;
+      const closingYear = dueMonth === 1 ? dueDate.getFullYear() - 1 : dueDate.getFullYear();
 
-        statementYear = statementYear ?? closingYear;
-        statementMonth = statementMonth ?? closingMonth;
-      }
+      statementYear = statementYear ?? closingYear;
+      statementMonth = statementMonth ?? closingMonth;
     }
 
     if (!statementYear) {
       statementYear = this.extractYearFromText(text) ?? new Date().getFullYear();
     }
 
-    return { statementYear, statementMonth };
+    return { statementYear, statementMonth, dueDate };
   }
 
   private extractDueDate(text: string): Date | null {
@@ -296,6 +341,14 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
 
     const date = new Date(year, month, day);
     return Number.isNaN(date.getTime()) ? null : date;
+  }
+
+  private getStatementReferenceDate(period: StatementPeriod): Date | null {
+    if (!period.statementMonth) {
+      return null;
+    }
+
+    return new Date(period.statementYear, period.statementMonth - 1, 1);
   }
 
   private extractYearFromText(text: string): number | null {

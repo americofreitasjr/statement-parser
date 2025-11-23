@@ -1,6 +1,12 @@
 import pdfParse from 'pdf-parse';
 import { IParser } from '../../types/parser.interface';
-import { ParseOptions, ParseResult, StatementFormat, BankCode } from '../../types';
+import {
+  ParseOptions,
+  ParseResult,
+  StatementFormat,
+  BankCode,
+  AccountProduct,
+} from '../../types';
 import { ParseError } from '../../types/errors';
 import { BankPdfProcessor, PdfProcessorDetectionInput } from './bank-pdf-processor';
 import { CarrefourPdfProcessor } from './banks/carrefour/carrefour-pdf-processor';
@@ -43,6 +49,7 @@ export class PDFParser implements IParser {
       const detectionInput: PdfProcessorDetectionInput = {
         fileName: options.fileName,
         text,
+        productType: options.productType,
       };
 
       for (const processor of this.processors) {
@@ -52,6 +59,7 @@ export class PDFParser implements IParser {
 
         const transactions = processor.parseTransactions(text, {
           fileName: options.fileName,
+          productType: options.productType,
         });
 
         return {
@@ -59,6 +67,7 @@ export class PDFParser implements IParser {
           account: {
             bankCode: processor.getBankCode(),
             bankName: processor.getBankName(),
+            productType: options.productType ?? AccountProduct.UNKNOWN,
           },
           transactions,
         };
@@ -94,6 +103,7 @@ export class PDFParser implements IParser {
       format: StatementFormat.PDF,
       account: {
         bankCode: options.bankCode || BankCode.UNKNOWN,
+        productType: options.productType || AccountProduct.UNKNOWN,
       },
       transactions: [],
       warnings,

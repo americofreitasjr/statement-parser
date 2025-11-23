@@ -1,14 +1,16 @@
-import { BankCode, Transaction } from '../../types';
+import { AccountProduct, BankCode, Transaction } from '../../types';
 
 export interface PdfProcessorDetectionInput {
   fileName?: string;
   text: string;
+  productType?: AccountProduct;
 }
 
 export interface PdfParserContext {
   fileName?: string;
   statementYear?: number;
   statementMonth?: number;
+  productType?: AccountProduct;
 }
 
 /**

@@ -1,0 +1,173 @@
+[
+  {
+    "date": "2024-07-01",
+    "description": "CRF 2 RJB RIO BARRA - 7/20",
+    "amount": -190,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2024-01-27",
+    "currentInstallment": 7,
+    "totalInstallments": 20
+  },
+  {
+    "date": "2024-07-01",
+    "description": "VELUPLAST TECIDOS,RIO DE JANEIR-6/10",
+    "amount": -325.9,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2024-02-05",
+    "currentInstallment": 6,
+    "totalInstallments": 10
+  },
+  {
+    "date": "2024-07-01",
+    "description": "BELL ART DECORACOES,RIO DE JANEIR-1/6",
+    "amount": -118.33,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2024-06-30",
+    "currentInstallment": 1,
+    "totalInstallments": 6
+  },
+  {
+    "date": "2024-07-01",
+    "description": "Pagamento Banco CSF",
+    "amount": 1814.18,
+    "type": "credit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-02",
+    "description": "ARMAZEM DO GRAO, RIO DE JANEIR",
+    "amount": -46.05,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-03",
+    "description": "CRF 2 RJB RIO BARRA",
+    "amount": -244.53,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-01",
+    "description": "ECOM 963 ECJ CARREFOURCOM - 1/20",
+    "amount": -168.35,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2024-07-11",
+    "currentInstallment": 1,
+    "totalInstallments": 20
+  },
+  {
+    "date": "2024-07-11",
+    "description": "Uber *UBER *TRIP, Sao Paulo",
+    "amount": -55.56,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-15",
+    "description": "Uber *UBER *TRIP, Sao Paulo",
+    "amount": -49.93,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-22",
+    "description": "Uber *UBER *TRIP, Sao Paulo",
+    "amount": -54.99,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-29",
+    "description": "Uber *UBER *TRIP, Sao Paulo",
+    "amount": -53.03,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "1111",
+    "invoiceDueDate": "2024-08-11"
+  },
+  {
+    "date": "2024-07-01",
+    "description": "DELL - 8/12",
+    "amount": -425,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "2222",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2023-12-07",
+    "currentInstallment": 8,
+    "totalInstallments": 12
+  },
+  {
+    "date": "2024-07-01",
+    "description": "DELL - 9/12",
+    "amount": -425,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "2222",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2023-12-07",
+    "currentInstallment": 9,
+    "totalInstallments": 12
+  },
+  {
+    "date": "2024-07-01",
+    "description": "DELL - 10/12",
+    "amount": -425,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "2222",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2023-12-07",
+    "currentInstallment": 10,
+    "totalInstallments": 12
+  },
+  {
+    "date": "2024-07-01",
+    "description": "DELL - 11/12",
+    "amount": -425,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "2222",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2023-12-07",
+    "currentInstallment": 11,
+    "totalInstallments": 12
+  },
+  {
+    "date": "2024-07-01",
+    "description": "DELL - 12/12",
+    "amount": -425,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "2222",
+    "invoiceDueDate": "2024-08-11",
+    "originalPurchaseDate": "2023-12-07",
+    "currentInstallment": 12,
+    "totalInstallments": 12
+  }
+]

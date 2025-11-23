@@ -5,15 +5,63 @@ import { Transaction } from '../../src/types';
 
 const FIXTURE_DIR = path.join(__dirname, '..', '..', 'fixtures', 'pdf', 'carrefour');
 
+const toIsoDate = (value: unknown): string | undefined => {
+  if (value instanceof Date) {
+    return value.toISOString().slice(0, 10);
+  }
+
+  if (typeof value === 'string' && value.length >= 10) {
+    return value.slice(0, 10);
+  }
+
+  return undefined;
+};
+
 const normalizeTransactions = (transactions: Transaction[]) =>
-  transactions.map((tx) => ({
-    date: tx.date.toISOString().slice(0, 10),
-    description: tx.description,
-    amount: Number(tx.amount.toFixed(2)),
-    type: tx.type,
-    currency: tx.currency,
-    cardLastFour: tx.metadata?.cardLastFour,
-  }));
+  transactions.map((tx) => {
+    const normalized: Record<string, unknown> = {
+      date: tx.date.toISOString().slice(0, 10),
+      description: tx.description,
+      amount: Number(tx.amount.toFixed(2)),
+      type: tx.type,
+      currency: tx.currency,
+    };
+
+    const metadata = tx.metadata as Record<string, unknown> | undefined;
+
+    const cardLastFour = metadata?.['cardLastFour'];
+    if (cardLastFour) {
+      normalized.cardLastFour = cardLastFour;
+    }
+
+    const invoiceDueDate = toIsoDate(metadata?.['invoiceDueDate']);
+    if (invoiceDueDate) {
+      normalized.invoiceDueDate = invoiceDueDate;
+    }
+
+    const originalPurchaseDate = toIsoDate(metadata?.['originalPurchaseDate']);
+    if (originalPurchaseDate) {
+      normalized.originalPurchaseDate = originalPurchaseDate;
+    }
+
+    const currentInstallment =
+      typeof metadata?.['currentInstallment'] === 'number'
+        ? (metadata?.['currentInstallment'] as number)
+        : undefined;
+    if (currentInstallment !== undefined) {
+      normalized.currentInstallment = currentInstallment;
+    }
+
+    const totalInstallments =
+      typeof metadata?.['totalInstallments'] === 'number'
+        ? (metadata?.['totalInstallments'] as number)
+        : undefined;
+    if (totalInstallments !== undefined) {
+      normalized.totalInstallments = totalInstallments;
+    }
+
+    return normalized;
+  });
 
 const loadFixture = (name: string) => {
   const text = fs.readFileSync(path.join(FIXTURE_DIR, `${name}.txt`), 'utf8');
@@ -47,7 +95,11 @@ describe('CarrefourPdfProcessor', () => {
   });
 
   describe('fixtures reais', () => {
-    const cases = ['carrefour-202407', 'carrefour-202502', 'carrefour-202508', 'carrefour-202510'];
+    const cases = fs
+      .readdirSync(FIXTURE_DIR)
+      .filter((file) => file.endsWith('.expected.json'))
+      .map((file) => file.replace('.expected.json', ''))
+      .sort();
 
     cases.forEach((fixtureName) => {
       it(`extrai corretamente as transações de ${fixtureName}`, () => {
