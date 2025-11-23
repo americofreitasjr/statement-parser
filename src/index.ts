@@ -5,3 +5,5 @@ export * from './core/statement-parser';
 export * from './core/format-detector';
 export * from './parsers/ofx/ofx-parser';
 export * from './parsers/pdf/pdf-parser';
+export * from './parsers/pdf/bank-pdf-processor';
+export * from './parsers/pdf/banks/carrefour/carrefour-pdf-processor';

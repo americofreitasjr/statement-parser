@@ -38,6 +38,7 @@ export enum BankCode {
   BTG = '208',
   SICREDI = '748',
   SICOOB = '756',
+  CARREFOUR = '368',
   UNKNOWN = '000',
 }
 
@@ -113,6 +114,8 @@ export interface ParseOptions {
   format?: StatementFormat;
   /** Código do banco (se conhecido) */
   bankCode?: BankCode;
+  /** Nome do arquivo original (usado para heurísticas de parsing) */
+  fileName?: string;
   /** Timezone para normalização de datas (padrão: America/Sao_Paulo) */
   timezone?: string;
   /** Modo de depuração */
