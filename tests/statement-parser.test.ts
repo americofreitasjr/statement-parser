@@ -1,5 +1,5 @@
 import { StatementParser } from '../src/core/statement-parser';
-import { StatementFormat, BankCode } from '../src/types';
+import { StatementFormat, BankCode, AccountProduct } from '../src/types';
 
 describe('StatementParser', () => {
   let parser: StatementParser;
@@ -72,7 +72,11 @@ NEWFILEUID:NONE
 </BANKMSGSRSV1>
 </OFX>`;
 
-      const result = await parser.parse(ofxContent);
+      const result = await parser.parse(ofxContent, {
+        format: StatementFormat.OFX,
+        bankCode: BankCode.NUBANK,
+        productType: AccountProduct.CHECKING,
+      });
 
       expect(result.format).toBe(StatementFormat.OFX);
       expect(result.account.bankCode).toBe(BankCode.NUBANK);
@@ -81,14 +85,30 @@ NEWFILEUID:NONE
   });
 
   describe('PDF parsing', () => {
-    it('should detect PDF format', async () => {
+    it('should parse PDF format when required options are provided', async () => {
       const pdfContent = Buffer.from('%PDF-1.4\n%fake pdf content');
 
-      const result = await parser.parse(pdfContent);
+      const result = await parser.parse(pdfContent, {
+        format: StatementFormat.PDF,
+        bankCode: BankCode.CARREFOUR,
+        productType: AccountProduct.CREDIT_CARD,
+      });
 
       expect(result.format).toBe(StatementFormat.PDF);
       expect(result.warnings).toBeDefined();
       expect(result.warnings?.length).toBeGreaterThan(0);
+    });
+
+    it('should throw when PDF options are invalid', async () => {
+      const pdfContent = Buffer.from('%PDF-1.4\n%fake pdf content');
+
+      await expect(
+        parser.parse(pdfContent, {
+          format: StatementFormat.PDF,
+          bankCode: BankCode.CARREFOUR,
+          productType: AccountProduct.UNKNOWN,
+        })
+      ).rejects.toThrow('ParseOptions.productType');
     });
   });
 
@@ -96,7 +116,13 @@ NEWFILEUID:NONE
     it('should throw error for unknown format', async () => {
       const invalidContent = 'This is not a valid statement format';
 
-      await expect(parser.parse(invalidContent)).rejects.toThrow();
+      await expect(
+        parser.parse(invalidContent, {
+          format: StatementFormat.OFX,
+          bankCode: BankCode.NUBANK,
+          productType: AccountProduct.CHECKING,
+        })
+      ).rejects.toThrow();
     });
   });
 });

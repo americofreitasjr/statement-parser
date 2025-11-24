@@ -38,7 +38,7 @@ statement-parser/
 
 1. **StatementParser** (src/core/statement-parser.ts)
    - Entry point principal
-   - Detecta formato via FormatDetector
+   - Requer `ParseOptions` com `format`, `bankCode` e `productType`
    - Delega para parser apropriado (OFX ou PDF)
    - Retorna ParseResult normalizado
 
@@ -61,10 +61,19 @@ statement-parser/
 ## Uso Básico
 
 ```typescript
-import { StatementParser } from '@americofreitasjr/statement-parser';
+import {
+  StatementParser,
+  StatementFormat,
+  BankCode,
+  AccountProduct,
+} from '@americofreitasjr/statement-parser';
 
 const parser = new StatementParser();
-const result = await parser.parse(fileContent);
+const result = await parser.parse(fileContent, {
+  format: StatementFormat.OFX,
+  bankCode: BankCode.ITAU,
+  productType: AccountProduct.CHECKING,
+});
 
 console.log(result.transactions);
 ```

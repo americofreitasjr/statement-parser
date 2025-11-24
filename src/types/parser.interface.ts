@@ -12,5 +12,5 @@ export interface IParser {
   /**
    * Faz o parsing do conteúdo e retorna as transações normalizadas
    */
-  parse(content: Buffer | string, options?: ParseOptions): Promise<ParseResult>;
+  parse(content: Buffer | string, options: ParseOptions): Promise<ParseResult>;
 }

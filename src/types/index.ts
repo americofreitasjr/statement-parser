@@ -123,12 +123,12 @@ export interface ParseResult {
  * Opções de parsing
  */
 export interface ParseOptions {
-  /** Formato esperado (se conhecido) */
-  format?: StatementFormat;
-  /** Código do banco (se conhecido) */
-  bankCode?: BankCode;
+  /** Formato esperado */
+  format: StatementFormat;
+  /** Código do banco */
+  bankCode: BankCode;
   /** Produto/conta (cartão, corrente, poupança, etc.) */
-  productType?: AccountProduct;
+  productType: AccountProduct;
   /** Nome do arquivo original (usado para heurísticas de parsing) */
   fileName?: string;
   /** Timezone para normalização de datas (padrão: America/Sao_Paulo) */

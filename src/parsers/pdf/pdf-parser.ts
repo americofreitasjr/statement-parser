@@ -1,12 +1,6 @@
 import pdfParse from 'pdf-parse';
 import { IParser } from '../../types/parser.interface';
-import {
-  ParseOptions,
-  ParseResult,
-  StatementFormat,
-  BankCode,
-  AccountProduct,
-} from '../../types';
+import { ParseOptions, ParseResult, StatementFormat, AccountProduct } from '../../types';
 import { ParseError } from '../../types/errors';
 import { BankPdfProcessor, PdfProcessorDetectionInput } from './bank-pdf-processor';
 import { CarrefourPdfProcessor } from './banks/carrefour/carrefour-pdf-processor';
@@ -36,7 +30,7 @@ export class PDFParser implements IParser {
     );
   }
 
-  async parse(content: Buffer | string, options: ParseOptions = {}): Promise<ParseResult> {
+  async parse(content: Buffer | string, options: ParseOptions): Promise<ParseResult> {
     try {
       const text = await this.tryExtractPdfText(content);
       if (!text) {
@@ -102,8 +96,8 @@ export class PDFParser implements IParser {
     return {
       format: StatementFormat.PDF,
       account: {
-        bankCode: options.bankCode || BankCode.UNKNOWN,
-        productType: options.productType || AccountProduct.UNKNOWN,
+        bankCode: options.bankCode,
+        productType: options.productType,
       },
       transactions: [],
       warnings,

@@ -91,6 +91,7 @@ main();
 ```
 
 > 💡 `format`, `bankCode`, `productType` e `fileName` ajudam o parser a selecionar o adapter correto e a inferir datas/parcelas com mais precisão. Para outros produtos/bancos basta informar o enum correspondente.
+> ⚠️ `StatementParser.parse` sempre exige `format`, `bankCode` e `productType` preenchidos; o parser lança `ParseError` se qualquer um estiver ausente ou como `UNKNOWN`.
 
 ### Usando buffers de outras fontes (ex.: S3)
 

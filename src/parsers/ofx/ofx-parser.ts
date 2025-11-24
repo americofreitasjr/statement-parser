@@ -23,7 +23,7 @@ export class OFXParser implements IParser {
     );
   }
 
-  async parse(content: Buffer | string, options: ParseOptions = {}): Promise<ParseResult> {
+  async parse(content: Buffer | string, options: ParseOptions): Promise<ParseResult> {
     const contentStr = typeof content === 'string' ? content : content.toString('utf-8');
 
     try {
@@ -33,7 +33,8 @@ export class OFXParser implements IParser {
       const result: ParseResult = {
         format: StatementFormat.OFX,
         account: {
-          bankCode: options.bankCode || BankCode.UNKNOWN,
+          bankCode: options.bankCode,
+          productType: options.productType,
         },
         transactions: [],
         warnings: ['Parser OFX em desenvolvimento - retornando dados de exemplo'],
