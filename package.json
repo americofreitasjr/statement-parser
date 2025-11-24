@@ -1,6 +1,6 @@
 {
   "name": "@americofreitasjr/statement-parser",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "Biblioteca Node.js/TypeScript para transformar extratos bancários brasileiros em dados estruturados",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
