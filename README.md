@@ -40,7 +40,7 @@ npm install @americofreitasjr/statement-parser
 yarn add @americofreitasjr/statement-parser
 ```
 
-### Exemplo (PDF Carrefour)
+### Exemplo
 
 ```typescript
 import {
@@ -126,13 +126,18 @@ const result = await parser.parse(Buffer.from(byteArray), {
 
 ### Suporte atual
 
-| Banco | Produto | Formato | Status | Detalhes |
-| --- | --- | --- | --- | --- |
-| Carrefour (Banco CSF) | Cartão de crédito | PDF | ✅ MVP disponível | Driver lê “LANÇAMENTOS NO BRASIL”, normaliza parcelas para o dia 01, expõe `invoiceDueDate`, `originalPurchaseDate`, `currentInstallment`, `totalInstallments` e `cardLastFour`. |
-| Santander | Conta corrente PF | PDF | ✅ MVP disponível | Driver interpreta o bloco “Conta Corrente / Movimentação”, trata doc number + valor na mesma linha e normaliza PIX/REMUNERAÇÃO/aplicações para transações básicas. |
+| Banco (`BankCode`) | Produto (`AccountProduct`) | PDF | OFX | CSV | Detalhes |
+| --- | --- | --- | --- | --- | --- |
+| `BankCode.CARREFOUR` | `AccountProduct.CREDIT_CARD` | ✅ |  |  | Driver lê “LANÇAMENTOS NO BRASIL”, normaliza parcelas para o dia 01, expõe `invoiceDueDate`, `originalPurchaseDate`, `currentInstallment`, `totalInstallments` e `cardLastFour`. |
+| `BankCode.SANTANDER` | `AccountProduct.CHECKING` | ✅ |  |  | Driver interpreta o bloco “Conta Corrente / Movimentação”, trata doc number + valor na mesma linha e normaliza PIX/REMUNERAÇÃO/aplicações para transações básicas. |
+| `BankCode.BRADESCO` | `AccountProduct.CHECKING` |  | ✅ |  | Fixtures anonimizadas em `fixtures/ofx/bradesco-conta-corrente.*`; OFXParser extrai `BANKID 0237`, branch, número da conta e normaliza transações. |
+| `BankCode.ITAU` | `AccountProduct.CHECKING` |  | ✅ |  | Fixtures em `fixtures/ofx/itau-conta-corrente.*`; cobertura de Pix e transferências com `BANKID 0341`. |
+| `BankCode.NUBANK` | `AccountProduct.CREDIT_CARD` |  | ✅ |  | Fixtures em `fixtures/ofx/nubank-cartao-credito.*`; parser usa `<FID>260</FID>` como fallback e normaliza compras/faturas. |
+| `BankCode.NUBANK` | `AccountProduct.CHECKING` |  | ✅ |  | Fixtures em `fixtures/ofx/nubank-conta-corrente.*`; extrai branch/account e saldos do OFX padrão. |
 
 - Novos bancos e produtos entram por meio de novos adapters (abra uma issue/PR com seus PDFs/OFX).
 - Mantenha seus arquivos reais em `input/` (gitignored) e gere fixtures + expected antes de enviar PRs.
+- OFX genérico: o parser aguenta outros bancos além dos listados (aproveitando `<BANKID>` ou `<FID>`), porém só os da tabela acima foram validados com fixtures oficiais.
 
 ## Como contribuir
 Abra issues com amostras de extratos, descreva desafios específicos e envie PRs com parsers, fixtures e testes. Precisamos de ajuda para cobrir novos bancos, revisar normalizações e evoluir o roadmap de forma transparente—participe, proponha ideias e mantenha o Statement Parser pulsando.

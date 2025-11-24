@@ -55,17 +55,17 @@ Agência
 0001
 ContaCorrente
 00.000000-0
-(=)Saldode ContaCorrenteem 31/050,00
-(=)Saldode ContaCorrenteem 30/060,01
+(=)Saldode ContaCorrenteem 31/49,74
+(=)Saldode ContaCorrenteem 30/60,44
 Conta Corrente
 Movimentação
 DataDescriçãoNº DocumentoMovimento(R$)Saldo(R$)
-SALDOEM 31/050,00
+SALDOEM 31/49,74
 03/06LIQUIDO DE VENCIMENTO
 EMPRESA EXEMPLO 00000000000000
-0106038.043,818.043,81
-04/06PIX ENVIADO CLIENTE EXEMPLO-8.043,81-
-REMUNERACAO APLICACAO AUTOMATICA-0,010,01
+010637.971,538.069,55
+04/06PIX ENVIADO CLIENTE EXEMPLO--8.078,40-
+REMUNERACAO APLICACAO AUTOMATICA--0,010,01
 SALDOEM 30/06
 0,01
 Se você não tem Limite da Conta e a sua conta ficou com saldo devedor, terá sido prestado o serviço de Adiantamento a Depositantes, sujeito à cobrança de juros de acordo com a taxa do produto
@@ -96,10 +96,10 @@ ResgateAutomático
 Saldo
 Disponível
 (=)
-020,000,000,000,000,000,000,00
-038.043,810,000,000,000,000,008.043,81
-040,010,000,000,000,000,000,01
-300,010,000,000,000,000,000,01
+19,970,000,000,000,000,000,00
+37.971,530,000,000,000,000,008.069,55
+40,130,000,000,000,000,000,01
+299,950,000,000,000,000,000,01
 * Valores deduzidos do saldo disponível para contas sem limite.
 
 EXTRATO CONSOLIDADO INTELIGENTE

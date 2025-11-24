@@ -2,22 +2,22 @@
   {
     "date": "2025-06-03",
     "description": "LIQUIDO DE VENCIMENTO EMPRESA EXEMPLO 00000000000000",
-    "amount": 8043.81,
+    "amount": 637971.53,
     "type": "credit",
     "currency": "BRL"
   },
   {
     "date": "2025-06-04",
-    "description": "PIX ENVIADO CLIENTE EXEMPLO",
-    "amount": -8043.81,
+    "description": "PIX ENVIADO CLIENTE EXEMPLO-",
+    "amount": -8078.4,
     "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2025-06-04",
-    "description": "REMUNERACAO APLICACAO AUTOMATICA",
-    "amount": 0.01,
-    "type": "credit",
+    "description": "REMUNERACAO APLICACAO AUTOMATICA-",
+    "amount": -0.01,
+    "type": "debit",
     "currency": "BRL"
   }
 ]

@@ -1,0 +1,709 @@
+[
+  {
+    "date": "2024-02-01",
+    "description": "Zona Sul Fl1034",
+    "amount": -8,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-02-01",
+    "description": "Zona Sul Fl",
+    "amount": -84.69,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-02-01",
+    "description": "Emporio Jardim Na Firj",
+    "amount": -75.26,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "Azul Se*Azulautoreser",
+    "amount": -193.09,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "Apple.Com/Bill",
+    "amount": -15.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-30",
+    "description": "Betanan",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-30",
+    "description": "Leoni Wernek Barbearia",
+    "amount": -55,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "Pg *Ton Zion Acai",
+    "amount": -73,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "Mercadolivre*Kalfe",
+    "amount": -381.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "Instituto Assistencial",
+    "amount": -4,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "Apple.Com/Bill",
+    "amount": -2.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "Instituto Assistencial",
+    "amount": -5,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-28",
+    "description": "Filial Burger King Fs",
+    "amount": -43.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-28",
+    "description": "Apple.Com/Bill",
+    "amount": -16.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-26",
+    "description": "Hortifruti Recreio",
+    "amount": -133.81,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-26",
+    "description": "Porto Seguro Seguros - Parcela 1/10",
+    "amount": -135.45,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-26",
+    "description": "Claro Flex",
+    "amount": -39.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-26",
+    "description": "Drogaria Venancio",
+    "amount": -34.37,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "Metro Rj",
+    "amount": -6.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "Instituto Assistencial",
+    "amount": -13,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "Emporio Jardim",
+    "amount": -78.74,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "Instituto Assistencial",
+    "amount": -22,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "Metro Rj",
+    "amount": -6.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-24",
+    "description": "Grao da Terra Penha",
+    "amount": -97.6,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-24",
+    "description": "Instituto Assistencial",
+    "amount": -22,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-24",
+    "description": "Apple.Com/Bill",
+    "amount": -34.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-23",
+    "description": "Lobus",
+    "amount": -16,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-22",
+    "description": "Posto Via Lagos Ltda",
+    "amount": -200,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-22",
+    "description": "Supermarket Barra",
+    "amount": -77.82,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-21",
+    "description": "Pag*Frutai",
+    "amount": -17,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-21",
+    "description": "Acai Dprimeira",
+    "amount": -16,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-21",
+    "description": "Apple.Com/Bill",
+    "amount": -49.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-21",
+    "description": "Pg *Ton Paulo Junior",
+    "amount": -18,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-20",
+    "description": "Mkm Buzios Bomboniere",
+    "amount": -59.21,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-20",
+    "description": "Pinbank*DESTINATARIO DESTINATARIO Ca",
+    "amount": -59.95,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-20",
+    "description": "Mercado Extra-2425",
+    "amount": -189.96,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-20",
+    "description": "Central Park-Buzios",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-19",
+    "description": "sem Parar",
+    "amount": -50,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-18",
+    "description": "Emporio Jardim",
+    "amount": -75.26,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-18",
+    "description": "Apple.Com/Bill",
+    "amount": -4.8,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-18",
+    "description": "Ifd*Rec Lfc Lanches",
+    "amount": -60.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-18",
+    "description": "Emporio Jardim",
+    "amount": -31.7,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-18",
+    "description": "Posto Chacaltaya",
+    "amount": -26.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-17",
+    "description": "Diogo",
+    "amount": -15.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-16",
+    "description": "Lobus",
+    "amount": -320,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "Instituto Assistencial",
+    "amount": -29.5,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "Mercadolivre*Blackwol - Parcela 1/5",
+    "amount": -32.4,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "Ebn *Spotify",
+    "amount": -27.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-14",
+    "description": "Padoca Rio Oficial",
+    "amount": -68.5,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-14",
+    "description": "Pag*Marquihosetc",
+    "amount": -45,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-14",
+    "description": "Zona Sul Fl",
+    "amount": -66.78,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-14",
+    "description": "Posto de Gasolina das",
+    "amount": -322.16,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-14",
+    "description": "Posto Chacaltaya",
+    "amount": -41,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Bazani",
+    "amount": -74.03,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Apple.Com/Bill",
+    "amount": -55,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Zona Sul Fl1034",
+    "amount": -24.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Mercadolivre*Mercadol - Parcela 1/3",
+    "amount": -15.86,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Zona Sul Fl1034",
+    "amount": -36.47,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-13",
+    "description": "Zona Sul Fl1034",
+    "amount": -60.97,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-11",
+    "description": "Oxy Body Academia",
+    "amount": -169,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-11",
+    "description": "Armazem do Grao",
+    "amount": -47.48,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-11",
+    "description": "Supermarket Barra",
+    "amount": -365.17,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-11",
+    "description": "Apple.Com/Bill",
+    "amount": -5.7,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-11",
+    "description": "Emporio Jardim",
+    "amount": -75.26,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-10",
+    "description": "Kleber Fernandes Rocha",
+    "amount": -20,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-10",
+    "description": "Diogo",
+    "amount": -12.98,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "Saldo restante da fatura anterior",
+    "amount": 0,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "Apple.Com/Bill",
+    "amount": -1.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "Saldo restante da fatura anterior",
+    "amount": 0,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "Pg *Ton Zion Acai",
+    "amount": -39,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "Pag*Selvabeachclub",
+    "amount": -30.8,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "Pag*Casadocafedamanha",
+    "amount": -64.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-07",
+    "description": "sem Par*sem Parar *",
+    "amount": -50,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-07",
+    "description": "Pg *Ton Guia de Maca",
+    "amount": -24,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-07",
+    "description": "Vivo Easy",
+    "amount": -45,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-07",
+    "description": "Auto Posto Casaca",
+    "amount": -100,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-07",
+    "description": "la Estrada Mini Mercad",
+    "amount": -65.78,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "Hortifruti Recreio",
+    "amount": -108.21,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "Drogaria Venancio - Parcela 1/6",
+    "amount": -77.46,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "Leoni Wernek Barbearia",
+    "amount": -55,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "Posto de Gasolina das",
+    "amount": -62.79,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-04",
+    "description": "Pinbank*Italian Food R",
+    "amount": -50,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-04",
+    "description": "Elias Gourmet Restaura",
+    "amount": -48.56,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-03",
+    "description": "Sky",
+    "amount": -290.49,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-03",
+    "description": "sem Par*sem Parar *",
+    "amount": -50,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-03",
+    "description": "Amazon Aws Servicos Br",
+    "amount": -117.92,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Vindi *Onsetfitness - Parcela 6/6",
+    "amount": -81.32,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Google Gsuite_sfconsul",
+    "amount": -54,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Star Point Koa - Parcela 2/5",
+    "amount": -105.76,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Dec Americas Comercio - Parcela 6/6",
+    "amount": -83.31,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Garagerio Rio - Parcela 2/2",
+    "amount": -164.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Pag*Camicado - Parcela 3/7",
+    "amount": -56.57,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Pagamento recebido",
+    "amount": 7121.16,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Armadillo - Parcela 2/6",
+    "amount": -96.01,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Drogaria Venancio - Parcela 11/12",
+    "amount": -80.25,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Casa e Video - Parcela 3/4",
+    "amount": -47.47,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Mxa Otica - Parcela 4/10",
+    "amount": -89.6,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Eimusica Upt - Parcela 2/10",
+    "amount": -214.2,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Posto Freeway Recreio",
+    "amount": -150.08,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Drogarias Pacheco S.A. - Parcela 4/4",
+    "amount": -54.74,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "Redley Barra Shopping - Parcela 2/3",
+    "amount": -83,
+    "type": "debit",
+    "currency": "BRL"
+  }
+]

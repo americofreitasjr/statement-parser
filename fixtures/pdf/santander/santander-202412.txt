@@ -64,38 +64,38 @@ Agência
 0001
 Conta Corrente
 00.000000-0
-(=)Saldo de Conta Corrente  em 30/112.750,00
-(=)Saldo de Conta Corrente em 31/120,02
+(=)Saldo de Conta Corrente  em 30/112.501,95
+(=)Saldo de Conta Corrente em 31/119,29
 Conta Corrente
 Movimentação
 DataDescriçãoNº DocumentoMovimento(R$)Saldo(R$)
-SALDO EM 30/112.750,00
+SALDO EM 30/112.501,95
 02/12PIX ENVIADO
 DESTINATARIO PIX
--2.750,00
+--2.747,53
 -
-REMUNERACAO APLICACAO AUTOMATICA-0,010,01
+REMUNERACAO APLICACAO AUTOMATICA--0,010,01
 03/12LIQUIDO DE VENCIMENTO
 EMPRESA EXEMPLO 00000000000000
-0112038.212,08
+011238.494,85
 PIX ENVIADO
 DESTINATARIO PIX
--7.710,00
+--7.702,29
 -
-502,09
+506,61
 18/12PIX ENVIADO
 POSTO DE GASOLINA LORD BA
-392796146,21
+392796146,03
 -
-355,88
+356,34
 20/12LIQUIDO DE VENCIMENTO
 EMPRESA EXEMPLO 00000000000000
-0112201.706,612.062,49
+0112200.274,492.058,57
 23/12PIX ENVIADO
 DESTINATARIO PIX
--2.062,49
+--2.056,30
 -
-REMUNERACAO APLICACAO AUTOMATICA-0,020,02
+REMUNERACAO APLICACAO AUTOMATICA--0,020,02
 SALDO EM 31/12
 0,02
 Se você não tem Limite da Conta e a sua conta ficou com saldo devedor, terá sido prestado o serviço de Adiantamento a Depositantes, sujeito à cobrança de juros de acordo com a taxa do produto
@@ -133,12 +133,12 @@ Resgate Automático
 Saldo
 Disponível
 (=)
-020,010,000,000,000,000,000,01
-03502,090,000,000,000,000,00502,09
-18355,880,000,000,000,000,00355,88
-202.062,490,000,000,000,000,002.062,49
-230,020,000,000,000,000,000,02
-310,020,000,000,000,000,000,02
+19,980,000,000,000,000,000,01
+03506,610,000,000,000,000,00506,61
+18356,340,000,000,000,000,00356,34
+201.678,570,000,000,000,000,002.058,57
+230,270,000,000,000,000,000,02
+307,540,000,000,000,000,000,02
 * Valores deduzidos do saldo disponível para contas sem limite.
 Investimentos 
 Clientes com perfil moderado estão dispostos a
@@ -162,7 +162,7 @@ MOVIMENTACOES DE CONTASAQUESilimitado
 TRANSF ENTRE CONTAS PROPRIA INSTITUICAOilimitado
 EXTRATOSEXTRATO TERMINAL2
 CHEQUESFORNECIMENTO DE FOLHAS10
-Valor da Mensalidade (R$)10,00
+Valor da Mensalidade (R$)10,02
 Status do DébitoEFETIVADO
 Dia de Débito01
 Para saber mais sobre as regras para obtenção de preços diferenciados na mensalidade dos pacotes de serviços elegíveis, consulte nossa equipe de atendimento.

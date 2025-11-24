@@ -6,49 +6,49 @@ TITULAR:CLIENTE EXEMPLO
 CARTÃO: 111111******1111
 PARCELE FÁCIL
 Parcelamento somente da fatura atual
-Conheça as opções de parcelamento da sua fatura com taxa de 12,20% a.m.
+Conheça as opções de parcelamento da sua fatura com taxa de 12,27% a.m.
 Sem Seguro
 Entrada
-R$ 180,59
-R$ 181,59
-R$ 182,59
+R$ 181,08
+R$ 181,92
+R$ 182,75
 Parcelas
  9x
 10x
 11x
 Valor das Parcelas
-R$ 628,62
-R$ 594,18
-R$ 566,69
+R$ 629,12
+R$ 593,65
+R$ 564,76
 Total de Encargos
-R$ 2.406,47
-R$ 2.691,73
-R$ 2.984,51
+R$ 2.411,52
+R$ 2.677,19
+R$ 2.980,63
 Valor Total
-R$ 5.657,55
-R$ 5.941,81
-R$ 6.233,59
+R$ 5.689,80
+R$ 5.901,41
+R$ 6.177,49
 Com Seguro
 Entrada
-R$ 181,34
-R$ 182,34
-R$ 183,34
+R$ 180,45
+R$ 181,28
+R$ 182,11
 Parcelas
  9x
 10x
 11x
 Valor das Parcelas
-R$ 674,93
-R$ 637,88
-R$ 608,30
+R$ 671,08
+R$ 638,26
+R$ 612,62
 Total de Encargos
-R$ 2.823,25
-R$ 3.128,73
-R$ 3.442,19
+R$ 2.831,72
+R$ 3.153,76
+R$ 3.411,55
 Valor Total
-R$ 6.074,33
-R$ 6.378,81
-R$ 6.691,27
+R$ 6.077,37
+R$ 6.401,14
+R$ 6.729,41
     Veja como contratar:
  
 1. Escolha uma das opções
@@ -62,7 +62,7 @@ R$ 6.691,27
 Seguro garantido por Cardif do Brasil Vida e Previdência S.A., CNPJ: 03.546.261/0001-08. Processo Susep 15414.900330/2014-16. Representantes de Seguro: Carrefour Com. e Indústria Ltda., CNPJ: 45.543.915/0001-50 e Banco CSF S.A., CNPJ:
 08.357.240/0001-50. Corretora: Aon Affinity do Brasil Serviços e Corretora de Seguros Ltda., CNPJ: 02.143.320/0001-26. Registro SUSEP 10.033.292-5. Contratação opcional. Desistência possível em até 7 (sete) dias corridos. “Comercialização de
 seguro fiscalizada pela Susep. www.susep.gov.br - 0800 021 8484”. “A aprovação deste Plano não implica em incentivo ou recomendação a sua aquisição pela SUSEP, representando, exclusivamente, adequação às normas em vigor”. SAC: 0800
-545 4040. Ouvidoria: 0800 727 2482 (Dias úteis, das 9h às 18h – horário Brasília) exceto feriados, ouvidoria.bnpparibascardif.com.br). Taxa de juros: 12,20% a.m. + IOF, valores já inclusos na parcela. CET Máximo 407,32% a.a.
+545 4040. Ouvidoria: 0800 727 2482 (Dias úteis, das 9h às 18h – horário Brasília) exceto feriados, ouvidoria.bnpparibascardif.com.br). Taxa de juros: 12,27% a.m. + IOF, valores já inclusos na parcela. CET Máximo 406,51% a.a.
 eH<f
 30000 017159
 e	FUJNf
@@ -87,7 +87,7 @@ RECIBO DO PAGADOR
 Nosso Número
 Nr Documento
 Data de VencimentoValor do Documento(=) Valor Pago
-09/77447664032-4111111******111111/08/2024R$ 3.431,67
+09/77447664032-4111111******111111/08/2024R$ 3.455,69
 Nome do Beneficiário/CNPJ/CPF/Endereço
 BANCO CSF S.A. CNPJ: 08.357.240/0001-50 - Av. Dr. Chucri Zaidan, 296 - 19º andar e 20º andar-parte - Vila Cordeiro - São Paulo - SP - CEP 04583-110
 Agência/Código do BeneficiárioAutenticação Mecânica
@@ -119,7 +119,7 @@ BANCO CSF S.A. CNPJ: 08.357.240/0001-50 - Av. Dr. Chucri Zaidan, 296 - 19º anda
 Data do DocumentoNr do DocumentoEspécie DOCAceiteData ProcessamentoNosso Número
 31/07/2024111111******1111OUN31/07/2024 09/77447664032-4
 Uso do BancoCarteiraEspécieQuantidadeValor(=) Valor do Documento
-09R$R$ 3.431,67
+09R$R$ 3.455,69
 Informações de responsabilidade do beneficiário(-) Desconto/Abatimento
 EM CASO DE PAGAMENTO INFERIOR AO VALOR TOTAL DA FATURA OU PAGAMENTO APÓS O VENCIMENTO, O CLIENTE DEVERÁ
 ARCAR COM AS TAXAS E ENCARGOS APONTADOS NESTA FATURA. OS ENCARGOS INCIDENTES SERÃO APLICADOS SOBRE O VALOR
@@ -137,97 +137,97 @@ AUTENTICAÇÃO MECÂNICA
 TIPOSPERÍODO ATUAL (11/07/2024 A 10/08/2024)
 Taxa A.M.Taxa A.A.CET A.M.CET A.A.
 Juros rotativo
-18,99%705,61%19,91%783,98%
+19,05%701,59%19,94%786,25%
 Juros remuneratórios
-18,99%705,61%22,96%1.094,87%
+19,05%701,59%22,97%1.104,40%
 Juros remuneratórios de
 parcelamento de fatura*
-18,49%665,91%19,41%740,31%
+18,63%666,64%19,53%738,76%
 Saque à vista
-14,99%434,47%15,96%491,15%
-Multa2,00%Mora1,00%-
+15,09%434,73%16,05%494,29%
+Multa2,01%Mora1,01%-
 TIPOSPRÓXIMO PERÍODO (11/08/2024 A 10/09/2024)
 Taxa A.M.Taxa A.A.CET A.M.CET A.A.
 Juros rotativo
-19,99%790,72%23,98%1.218,99%
+20,04%783,52%23,98%1.213,63%
 Juros remuneratórios
-19,99%790,72%23,98%1.218,99%
+20,04%783,52%23,98%1.213,63%
 Juros remuneratórios de
 parcelamento de fatura*
-19,49%747,19%20,45%832,48%
+19,62%751,82%20,59%834,89%
 Saque à vista
-15,99%492,99%16,98%556,39%
-MultaR$ 68,63MoraR$ 34,32
+16,09%488,41%17,06%553,72%
+MultaR$ 68,21MoraR$ 34,04
 TOTAL DA SUA FATURAVENCIMENTOLIMITE DE CRÉDITO
-R$ 3.431,6711/08/2024R$4.770,00
+R$ 3.455,6911/08/2024R$4.761,41
 OUTRAS ALTERNATIVAS DE PAGAMENTO DA FATURA
 PARCELE FÁCIL
   
-Entrada de R$180,59 +  9X de R$628,62
+Entrada de R$181,08 +  9X de R$629,12
 PAGAMENTO MÍNIMO
-R$ 171,59
-Encargos totais de R$639,50, serão cobrados no próximo mês
+R$ 173,25
+Encargos totais de R$645,06, serão cobrados no próximo mês
 Pagamento mínimo: é um valor para pagamento das despesas até o vencimento, para não gerar inadimplência. O seu cálculo dependerá das transações que compõem o saldo da fatura. Para compras à vista
 e parceladas, seguros, encargos e tarifas, é considerado 5% do valor, para produtos (Parcele, Parcelamento Automático e Crédito Pessoal), é considerado 100% do valor para o cálculo.
 ENCARGOS FINANCEIROS
 
 LANÇAMENTOS NO BRASIL
 DATADESCRIÇÃO VALOR R$
-SALDO FATURA ANTERIOR1.814,18
+SALDO FATURA ANTERIOR1.825,61
 CLIENTE EXEMPLO111111******1111
 27/01CRF 2 RJB RIO BARRA - 7/20
-190,00
+189,70
 05/02VELUPLAST TECIDOS,RIO DE JANEIR-6/10
-325,90
+328,28
 30/06BELL ART DECORACOES,RIO DE JANEIR-1/6
-118,33
+118,80
 01/07Pagamento Banco CSF
-1.814,18-
+1.825,61-
 02/07ARMAZEM DO GRAO, RIO DE JANEIR
-46,05
+45,73
 03/07CRF 2 RJB RIO BARRA
-244,53
+245,80
 11/07ECOM 963 ECJ CARREFOURCOM - 1/20
-168,35
+169,14
 11/07Uber   *UBER   *TRIP, Sao Paulo
-55,56
+55,65
 15/07Uber   *UBER   *TRIP, Sao Paulo
-49,93
+49,84
 22/07Uber   *UBER   *TRIP, Sao Paulo
-54,99
+54,73
 29/07Uber   *UBER   *TRIP, Sao Paulo
-53,03
+53,44
 31/07Isenção Parcela Anuidade - 100% - 7/12
  -
 DATADESCRIÇÃO VALOR R$
 CARTAO VIRTUAL222222******2222
 07/12DELL - 8/12
-425,00
+422,66
 07/12DELL - 9/12
-425,00
+422,66
 07/12DELL - 10/12
-425,00
+422,66
 07/12DELL - 11/12
-425,00
+422,66
 07/12DELL - 12/12
-425,00
-TOTAL DA FATURAR$ 3.431,67
+422,66
+TOTAL DA FATURAR$ 3.455,69
 RESUMO DA FATURA EM R$
 Total da fatura anterior:
-R$ 1.814,18
+R$ 1.825,61
 (+) Pagamentos efetuados/créditos:
-R$ 1.814,18
+R$ 1.825,61
 (-) Lançamentos atuais/débitos:
-R$ 3.431,67
+R$ 3.455,69
 TOTAL DA FATURA ATUAL:
-3.431,67
+3.455,69
 SALDOS FUTUROS
 Total de parcelas a pagar:
-R$ 7.563,88
+R$ 7.513,20
 Total de despesas parceladas a vencer na próxima fatura:
-R$ 802,58
+R$ 810,37
 Total de parcelas a vencer da anuidade:
-R$ 79,95
+R$ 79,52
 Caso deseje antecipar o pagamento das parcelas a vencer, reduzindo proporcionalmente os seus encargos,
 basta realizar a simulação no aplicativo ou nos canais de atendimento.
 RESUMO DAS DESPESAS NO EXTERIOR
@@ -237,8 +237,8 @@ Conforme circular nº 3918 de 2020 do Banco Central, o cálculo para a conversã
 será no dia da compra, dessa forma não haverá mais a cobrança da variação cambial. Será aplicada a
 taxa de 4,5% à cotação do dólar utilizada na conversão da transação.
 LIMITES EM R$
-Limite de crédito:R$ 4.770,00
-Limite de retirada de recursos (saque):R$ 715,50
+Limite de crédito:R$ 4.761,41
+Limite de retirada de recursos (saque):R$ 717,79
  
 Atenção! A nova regra do teto de juros vigente desde 02/01/2024 considera que a soma dos
 juros e encargos de atraso não poderá ultrapassar 100% do valor da dívida original e ela se

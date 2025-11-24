@@ -1,0 +1,72 @@
+[
+  {
+    "date": "2024-09-02",
+    "description": "Transfe Pix Rem: CLIENTE CLIENTE s de 01/09",
+    "amount": 5000,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-09-02",
+    "description": "Apl.invest Fac",
+    "amount": -150.04,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-09-02",
+    "description": "Prest Fin Imob",
+    "amount": -4849.96,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-09-13",
+    "description": "Resgate Inv Fac",
+    "amount": 15.94,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-09-13",
+    "description": "Rent.inv.facil",
+    "amount": 0.01,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-09-13",
+    "description": "Pacote Servicos Padronizado Prioritarios i",
+    "amount": -15.95,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-11-01",
+    "description": "Transferencia Pix Rem: SEXEMPLO Consultoria 01/11",
+    "amount": 1561.61,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-11-01",
+    "description": "Transferencia Pix Rem: CLIENTE CLIENTE s de 01/11",
+    "amount": 3500,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-11-01",
+    "description": "Prestacao de Cred Imob",
+    "amount": -4839.99,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-11-01",
+    "description": "Aplic.autom.investfacil*",
+    "amount": -221.62,
+    "type": "debit",
+    "currency": "BRL"
+  }
+]

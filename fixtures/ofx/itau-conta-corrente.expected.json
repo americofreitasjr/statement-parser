@@ -1,0 +1,317 @@
+[
+  {
+    "date": "2024-01-02",
+    "description": "MOBILEPAG TIT BANCO 260",
+    "amount": -7121.16,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "MOBILEPAG TIT BANCO 368",
+    "amount": -494.92,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "PIX TRANSF  Amanda 02 01",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "PIX TRANSF  CLIENTE31 12",
+    "amount": -150,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "PIX TRANSF  ING PIM31 12",
+    "amount": -150,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "SISPAG  SEXEMPLO CONS I",
+    "amount": 14000,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-02",
+    "description": "PIX TRANSF  DESTINATARIO31 12",
+    "amount": 100,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-03",
+    "description": "TAR PACOTE ITAU   DEZ 23",
+    "amount": -49.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-04",
+    "description": "PIX TRANSF  Altair 04 01",
+    "amount": -25,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "MOBILEPAG TIT 2950434570",
+    "amount": -300,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-05",
+    "description": "MOBILEPAG TIT 9309989430",
+    "amount": -1089.33,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "PIX TRANSF  DESTINATARIO Ca08 01",
+    "amount": -60,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "PIX TRANSF  DESTINATARIO B08 01",
+    "amount": -120,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-08",
+    "description": "DA  CEG GAS 00081833527",
+    "amount": -67.6,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "PIX TRANSF  CLIENTE09 01",
+    "amount": -330.98,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "PIX TRANSF  DESTINATARIO09 01",
+    "amount": -3271.15,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "PIX TRANSF  IGREJA 09 01",
+    "amount": -2000,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-09",
+    "description": "SISPAG  SEXEMPLO CONS I",
+    "amount": 1000,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-10",
+    "description": "DA  LIGHT 010138375063",
+    "amount": -106.18,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-10",
+    "description": "DEB AUTOR MEDICOS SEM FR",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-12",
+    "description": "PIX TRANSF  DESTINATARIO12 01",
+    "amount": -963.59,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-12",
+    "description": "SISPAG  SEXEMPLO CONS I",
+    "amount": 933.99,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-12",
+    "description": "PIX TRANSF  DESTINATARIO12 01",
+    "amount": 81.62,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "PIX TRANSF  ING PIM15 01",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "PIX TRANSF  ING PIM14 01",
+    "amount": 60,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-15",
+    "description": "DA  CEG GAS 00081833527",
+    "amount": -67.72,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-16",
+    "description": "PIX TRANSF  DESTINATARIO d16 01",
+    "amount": -250,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-17",
+    "description": "PIX TRANSF  DESTINATARIO A17 01",
+    "amount": -10,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-22",
+    "description": "PIX QRS DESTINATARIO dos 20 01",
+    "amount": -5,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-22",
+    "description": "PIX TRANSF  DESTINATARIO21 01",
+    "amount": 98,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-22",
+    "description": "DEB AUTOR Matriz AUTO RE",
+    "amount": -48,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-23",
+    "description": "DEB AUTOR METLIFE PL ODO",
+    "amount": -49.9,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-24",
+    "description": "PIX QRS Lidia Alves24 01",
+    "amount": -16,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-25",
+    "description": "PIX TRANSF  ING PIM25 01",
+    "amount": 8,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "MOBILEPAG TIT BANCO 237",
+    "amount": -2559.33,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "PIX TRANSF  Cristia27 01",
+    "amount": -30,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "PIX TRANSF  DESTINATARIO B27 01",
+    "amount": -20,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-29",
+    "description": "TBI 2901 15672 5 500",
+    "amount": 4492.56,
+    "type": "credit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "MOBILEPAG TIT BANCO 237",
+    "amount": -191.88,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "MOBILEPAG TIT BANCO 237",
+    "amount": -334.46,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "MOBILEPAG TIT BANCO 237",
+    "amount": -191.88,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "PIX TRANSF  DESTINATARIO A31 01",
+    "amount": -10,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "PIX TRANSF  MONIQUE31 01",
+    "amount": -100,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "PIX TRANSF  DESTINATARIO31 01",
+    "amount": -12.5,
+    "type": "debit",
+    "currency": "BRL"
+  },
+  {
+    "date": "2024-01-31",
+    "description": "SALDO FINAL",
+    "amount": 1096.94,
+    "type": "credit",
+    "currency": "BRL"
+  }
+]

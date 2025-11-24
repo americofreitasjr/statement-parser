@@ -1,58 +1,58 @@
 [
   {
     "date": "2024-12-02",
-    "description": "PIX ENVIADO DESTINATARIO PIX",
-    "amount": -2750,
+    "description": "PIX ENVIADO DESTINATARIO PIX -",
+    "amount": -2747.53,
     "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-02",
-    "description": "REMUNERACAO APLICACAO AUTOMATICA",
-    "amount": 0.01,
-    "type": "credit",
+    "description": "REMUNERACAO APLICACAO AUTOMATICA-",
+    "amount": -0.01,
+    "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-03",
     "description": "LIQUIDO DE VENCIMENTO EMPRESA EXEMPLO 00000000000000",
-    "amount": 8212.08,
+    "amount": 238494.85,
     "type": "credit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-03",
-    "description": "PIX ENVIADO DESTINATARIO PIX",
-    "amount": -7710,
+    "description": "PIX ENVIADO DESTINATARIO PIX -",
+    "amount": -7702.29,
     "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-18",
     "description": "PIX ENVIADO POSTO DE GASOLINA LORD BA",
-    "amount": -146.21,
+    "amount": -146.03,
     "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-20",
     "description": "LIQUIDO DE VENCIMENTO EMPRESA EXEMPLO 00000000000000",
-    "amount": 1706.61,
+    "amount": 274.49,
     "type": "credit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-23",
-    "description": "PIX ENVIADO DESTINATARIO PIX",
-    "amount": -2062.49,
+    "description": "PIX ENVIADO DESTINATARIO PIX -",
+    "amount": -2056.3,
     "type": "debit",
     "currency": "BRL"
   },
   {
     "date": "2024-12-23",
-    "description": "REMUNERACAO APLICACAO AUTOMATICA",
-    "amount": 0.02,
-    "type": "credit",
+    "description": "REMUNERACAO APLICACAO AUTOMATICA-",
+    "amount": -0.02,
+    "type": "debit",
     "currency": "BRL"
   }
 ]

@@ -2,7 +2,7 @@
   {
     "date": "2024-07-01",
     "description": "CRF 2 RJB RIO BARRA - 7/20",
-    "amount": -190,
+    "amount": -189.7,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -14,7 +14,7 @@
   {
     "date": "2024-07-01",
     "description": "VELUPLAST TECIDOS,RIO DE JANEIR-6/10",
-    "amount": -325.9,
+    "amount": -328.28,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -26,7 +26,7 @@
   {
     "date": "2024-07-01",
     "description": "BELL ART DECORACOES,RIO DE JANEIR-1/6",
-    "amount": -118.33,
+    "amount": -118.8,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -38,7 +38,7 @@
   {
     "date": "2024-07-01",
     "description": "Pagamento Banco CSF",
-    "amount": 1814.18,
+    "amount": 1825.61,
     "type": "credit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -47,7 +47,7 @@
   {
     "date": "2024-07-02",
     "description": "ARMAZEM DO GRAO, RIO DE JANEIR",
-    "amount": -46.05,
+    "amount": -45.73,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -56,7 +56,7 @@
   {
     "date": "2024-07-03",
     "description": "CRF 2 RJB RIO BARRA",
-    "amount": -244.53,
+    "amount": -245.8,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -65,7 +65,7 @@
   {
     "date": "2024-07-01",
     "description": "ECOM 963 ECJ CARREFOURCOM - 1/20",
-    "amount": -168.35,
+    "amount": -169.14,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -77,7 +77,7 @@
   {
     "date": "2024-07-11",
     "description": "Uber *UBER *TRIP, Sao Paulo",
-    "amount": -55.56,
+    "amount": -55.65,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -86,7 +86,7 @@
   {
     "date": "2024-07-15",
     "description": "Uber *UBER *TRIP, Sao Paulo",
-    "amount": -49.93,
+    "amount": -49.84,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -95,7 +95,7 @@
   {
     "date": "2024-07-22",
     "description": "Uber *UBER *TRIP, Sao Paulo",
-    "amount": -54.99,
+    "amount": -54.73,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -104,7 +104,7 @@
   {
     "date": "2024-07-29",
     "description": "Uber *UBER *TRIP, Sao Paulo",
-    "amount": -53.03,
+    "amount": -53.44,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "1111",
@@ -113,7 +113,7 @@
   {
     "date": "2024-07-01",
     "description": "DELL - 8/12",
-    "amount": -425,
+    "amount": -422.66,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "2222",
@@ -125,7 +125,7 @@
   {
     "date": "2024-07-01",
     "description": "DELL - 9/12",
-    "amount": -425,
+    "amount": -422.66,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "2222",
@@ -137,7 +137,7 @@
   {
     "date": "2024-07-01",
     "description": "DELL - 10/12",
-    "amount": -425,
+    "amount": -422.66,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "2222",
@@ -149,7 +149,7 @@
   {
     "date": "2024-07-01",
     "description": "DELL - 11/12",
-    "amount": -425,
+    "amount": -422.66,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "2222",
@@ -161,7 +161,7 @@
   {
     "date": "2024-07-01",
     "description": "DELL - 12/12",
-    "amount": -425,
+    "amount": -422.66,
     "type": "debit",
     "currency": "BRL",
     "cardLastFour": "2222",
