@@ -4,6 +4,7 @@ import { ParseOptions, ParseResult, StatementFormat, AccountProduct } from '../.
 import { ParseError } from '../../types/errors';
 import { BankPdfProcessor, PdfProcessorDetectionInput } from './bank-pdf-processor';
 import { CarrefourPdfProcessor } from './banks/carrefour/carrefour-pdf-processor';
+import { SantanderPdfProcessor } from './banks/santander/santander-pdf-processor';
 
 /**
  * Parser para extratos em formato PDF
@@ -11,7 +12,9 @@ import { CarrefourPdfProcessor } from './banks/carrefour/carrefour-pdf-processor
 export class PDFParser implements IParser {
   private readonly processors: BankPdfProcessor[];
 
-  constructor(processors: BankPdfProcessor[] = [new CarrefourPdfProcessor()]) {
+  constructor(
+    processors: BankPdfProcessor[] = [new CarrefourPdfProcessor(), new SantanderPdfProcessor()]
+  ) {
     this.processors = processors;
   }
 

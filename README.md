@@ -207,3 +207,7 @@ Abra issues com amostras de extratos, descreva desafios específicos e envie PRs
   - Usa fixtures reais em `fixtures/pdf/carrefour/*.txt` e expected outputs em `.expected.json`. Gere novos expected usando o próprio driver (por exemplo, lendo os PDFs em `input/` e salvando o JSON gerado) para garantir que os testes (`tests/pdf/carrefour-pdf-processor.test.ts`) cubram cada mês.
   - Os PDFs reais ficam fora do versionamento dentro de `input/` (listado no `.gitignore`).
   - Para reduzir exposição de PII, apenas a amostra anonimizada `carrefour-202407` permanece versionada; mantenha seus demais fixtures/expected (reais) localmente e gere-os quando necessário.
+- **Santander (conta corrente)**: driver em `src/parsers/pdf/banks/santander`. Ele:
+  - Converte o bloco “Conta Corrente / Movimentação” em transações normalizadas, tratando casos onde datas aparecem apenas na primeira linha do dia.
+  - Remove linhas de saldo/aplicação automática e interpreta créditos/débitos via convenção `valor-`.
+  - Usa fixtures anonimizadas em `fixtures/pdf/santander/*.txt` e expected outputs em `.expected.json` (gerados com o próprio parser); os PDFs reais ficam em `input/santander`.
