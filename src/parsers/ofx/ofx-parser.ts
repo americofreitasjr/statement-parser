@@ -44,6 +44,11 @@ export class OFXParser implements IParser {
       const bankIdMatch = contentStr.match(/<BANKID>(\d+)/i);
       if (bankIdMatch) {
         result.account.bankCode = this.mapBankCode(bankIdMatch[1]);
+      } else {
+        const fidMatch = contentStr.match(/<FID>(\d+)/i);
+        if (fidMatch) {
+          result.account.bankCode = this.mapBankCode(fidMatch[1]);
+        }
       }
 
       const branchIdMatch = contentStr.match(/<BRANCHID>([^<]+)/i);
