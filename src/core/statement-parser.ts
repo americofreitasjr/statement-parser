@@ -42,9 +42,7 @@ export class StatementParser {
     // Obtém o parser apropriado
     const parser = this.parsers.get(options.format);
     if (!parser) {
-      throw new UnsupportedFormatError(
-        `Parser não encontrado para o formato: ${options.format}`
-      );
+      throw new UnsupportedFormatError(`Parser não encontrado para o formato: ${options.format}`);
     }
 
     // Valida se o parser pode processar o conteúdo
