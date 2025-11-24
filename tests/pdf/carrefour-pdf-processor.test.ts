@@ -113,4 +113,15 @@ describe('CarrefourPdfProcessor', () => {
       });
     });
   });
+
+  it('prioriza anos realistas ao inferir período', () => {
+    const helper = processor as unknown as {
+      extractYearFromText: (text: string) => number | null;
+    };
+
+    const sampleText =
+      'CNPJ: 01763/0001-08 - Dados 1763  LANÇAMENTOS 31/10/2025 VALOR 40,09';
+
+    expect(helper.extractYearFromText(sampleText)).toBe(2025);
+  });
 });

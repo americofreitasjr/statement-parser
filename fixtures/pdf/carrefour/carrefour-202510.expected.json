@@ -1,0 +1,92 @@
+[
+  {
+    "date": "2025-10-01",
+    "description": "ECOM 963 ECJ CARREFOURCOM - 16/20",
+    "amount": -168.35,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11",
+    "originalPurchaseDate": "2025-07-11",
+    "currentInstallment": 16,
+    "totalInstallments": 20
+  },
+  {
+    "date": "2025-10-01",
+    "description": "POSTO IPIRANGA RECREIO,RIO DE JANE-5/6",
+    "amount": -119.72,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11",
+    "originalPurchaseDate": "2025-06-07",
+    "currentInstallment": 5,
+    "totalInstallments": 6
+  },
+  {
+    "date": "2025-10-19",
+    "description": "Multa sobre saldo rotativo em atraso",
+    "amount": -6.59,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  },
+  {
+    "date": "2025-10-28",
+    "description": "Pagamento de Fatura via PIX",
+    "amount": 329.25,
+    "type": "credit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  },
+  {
+    "date": "2025-10-01",
+    "description": "ANUIDADE Diferenciada - 10/12",
+    "amount": -16.99,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11",
+    "originalPurchaseDate": "2025-10-31",
+    "currentInstallment": 10,
+    "totalInstallments": 12
+  },
+  {
+    "date": "2025-10-31",
+    "description": "IOF adicional - saldo financiado",
+    "amount": -1.28,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  },
+  {
+    "date": "2025-10-31",
+    "description": "IOF diario - saldo financiado",
+    "amount": -0.48,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  },
+  {
+    "date": "2025-10-31",
+    "description": "Juros de Mora",
+    "amount": -1.87,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  },
+  {
+    "date": "2025-10-31",
+    "description": "Juros Remuneratórios",
+    "amount": -40.09,
+    "type": "debit",
+    "currency": "BRL",
+    "cardLastFour": "9999",
+    "invoiceDueDate": "2025-11-11"
+  }
+]

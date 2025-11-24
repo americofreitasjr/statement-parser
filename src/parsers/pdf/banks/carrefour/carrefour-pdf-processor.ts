@@ -352,11 +352,24 @@ export class CarrefourPdfProcessor implements BankPdfProcessor {
   }
 
   private extractYearFromText(text: string): number | null {
-    const match = text.match(/(\d{4})/);
-    if (!match) {
-      return null;
+    const iterator = text.matchAll(/(\d{4})/g);
+    let fallback: number | null = null;
+
+    for (const match of iterator) {
+      const year = parseInt(match[1], 10);
+      if (Number.isNaN(year)) {
+        continue;
+      }
+
+      if (fallback === null) {
+        fallback = year;
+      }
+
+      if (year >= 2000 && year <= 2100) {
+        return year;
+      }
     }
 
-    return parseInt(match[1], 10);
+    return fallback;
   }
 }
